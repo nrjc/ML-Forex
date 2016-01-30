@@ -1,6 +1,6 @@
 from fann2 import libfann
 import re
-f = open('testingdata', 'r')
+f = open('jytesting', 'r')
 a=[]
 for line in f:
     b=re.sub('\n','',line).split('\t')

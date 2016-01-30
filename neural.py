@@ -15,6 +15,6 @@ ann.create_standard_array((4,4,1))
 ann.set_learning_rate(learning_rate)
 ann.set_activation_function_output(libfann.SIGMOID_SYMMETRIC)
 
-ann.train_on_file("trainingdata", max_iterations, iterations_between_reports, desired_error)
+ann.train_on_file("jytraining", max_iterations, iterations_between_reports, desired_error)
 
 ann.save("new.net")
