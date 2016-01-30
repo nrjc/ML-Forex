@@ -1,6 +1,7 @@
 from fann2 import libfann
 import re
-f = open('jytesting', 'r')
+nameoffile="jy"
+f = open(nameoffile+"testing", 'r')
 a=[]
 for line in f:
     b=re.sub('\n','',line).split('\t')
@@ -11,7 +12,7 @@ for line in f:
 	
 	
 ann = libfann.neural_net()
-ann.create_from_file("new.net")
+ann.create_from_file(nameoffile+".net")
 totalnumber=0.0
 numberright=0.0
 for test in a:
