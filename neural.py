@@ -1,13 +1,13 @@
 from fann2 import libfann
 
-learning_rate = 0.7
+learning_rate = 0.3
 num_layers = 3
 num_input = 4
 num_hidden = 4
 num_output = 1
 
 desired_error = 0.0001
-max_iterations = 10
+max_iterations = 7
 iterations_between_reports = 1
 
 ann = libfann.neural_net()
