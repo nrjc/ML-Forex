@@ -16,10 +16,14 @@ totalnumber=0.0
 numberright=0.0
 for test in a:
 	output=test.pop()
-	if(ann.run(test)>=0.5):
+	result=ann.run(test)
+	print test
+	print result
+	if(result>=0.5):
 		predicted=1;
 	else:
 		predicted=0;
+	print predicted,output
 	totalnumber+=1
 	if (output==predicted):
 		numberright+=1
