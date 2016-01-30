@@ -19,11 +19,12 @@ for test in a:
 	result=ann.run(test)
 	print test
 	print result
-	if(result>=0.5):
+	if(result[0]>=0.5):
 		predicted=1;
 	else:
 		predicted=0;
-	print predicted,output
+	print "We predict ",predicted
+	print "The output was ",output
 	totalnumber+=1
 	if (output==predicted):
 		numberright+=1
