@@ -1,6 +1,6 @@
 from fann2 import libfann
 nameoffile="jy"
-learning_rate = 0.7
+learning_rate = 0.3
 num_layers = 3
 num_input = 4
 num_hidden = 4

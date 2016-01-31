@@ -15,21 +15,24 @@ ann = libfann.neural_net()
 ann.create_from_file(nameoffile+".net")
 totalnumber=0.0
 numberright=0.0
+predictup=0
 for test in a:
 	output=test.pop()
 	result=ann.run(test)
 	print test
 	print result
 	if(result[0]>=0.5):
-		predicted=1;
+		predicted=1
+		predictup+=1
 	else:
-		predicted=0;
+		predicted=0
 	print "We predict ",predicted
 	print "The output was ",output
 	totalnumber+=1
 	if (output==predicted):
 		numberright+=1
 	
-print numberright, totalnumber
-print numberright/totalnumber
+print "Total number of right guesses:",numberright,"Total number of trades:", totalnumber
+print "percentage correct:",numberright/totalnumber
+print "Total buy", predictup
 
